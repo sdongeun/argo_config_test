@@ -7,7 +7,7 @@ spec:
   project: default
   
   source:
-    repoURL: https://github.com/yesbeE8/kubeConfig.github
+    repoURL: https://github.com/sdongeun/argo_config_test.git
     targetRevision: HEAD
     path: dev
   destination:
