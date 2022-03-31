@@ -9,7 +9,7 @@ spec:
   source:
     repoURL: https://github.com/sdongeun/argo_config_test.git
     targetRevision: HEAD
-    path: dev
+    path: kubeConfig
   destination:
     server: https://kubernetes.default.svc
     namespace: argo-sde
