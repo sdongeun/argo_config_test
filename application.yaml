@@ -1,0 +1,25 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: argo-application-sde
+  namespace: argocd
+spec:
+  project: default
+  
+  source:
+    repoURL: https://github.com/yesbeE8/kubeConfig.github
+    targetRevision: HEAD
+    path: dev
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: argo-sde
+    
+  syncPolicy:
+    syncOptions:
+    - createNamespace=true
+    
+    automated:
+      # auto pruning for overwriting
+      selfHeal: true
+      prune: true
+    
