@@ -10,12 +10,10 @@ spec:
     repoURL: https://github.com/sdongeun/argo_config_test.git
     targetRevision: HEAD
     path: kubeConfig
-  
-  chart: argo-sde-chart
-  helm:
-    valueFiles:
-    - values.yaml
-    
+    helm:
+      valueFiles:
+      - values.yaml
+      
   destination:
     server: https://kubernetes.default.svc
     namespace: argo-sde
