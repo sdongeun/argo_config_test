@@ -41,7 +41,7 @@ service:
   type: NodePort
   port: 8888
   # targetPort: 8888
-  nodePort: 8383
+  nodePort: 30011
 
 ingress:
   enabled: false
